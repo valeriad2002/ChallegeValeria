@@ -46,4 +46,4 @@ Este proyecto es una aplicación web que permite encriptar y desencriptar texto 
 - Alerta de confirmación al copiar el texto al portapapeles.
 - Enfoque automático en el campo de entrada después de copiar el texto para facilitar nuevas operaciones.
 ##Mensaje Encriptado 
-![image](https://github.com/valeriad2002/ChallegeValeria/img/mensajedesifrado.png")
+![image](https://github.com/valeriad2002/ChallegeValeria/img/mensajedesifrado.png)
