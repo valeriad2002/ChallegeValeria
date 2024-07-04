@@ -167,17 +167,10 @@ header {
     }
     .right-side {
         background-color: #F3F5FC;
-        flex: 1;
-        display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-        align-items: center;
-        padding: 19px;
-    /*background-color: #FFFFFF;
-    /* margin-top: -21px; */
-    /* padding-bottom: 150px; */
-    /* width: 20px;*/
+        width: 98%;
+        margin: 10px;
     }
+    
 
     .buttons button {
         width: 100%;
