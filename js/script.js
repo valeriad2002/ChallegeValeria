@@ -44,6 +44,7 @@ encryptButton.addEventListener('click', () => {
     if (text.trim() !== '') { // Verifica si hay texto para encriptar
         const encrypted = encrypt(text);
         showResult(encrypted); // Muestra el resultado encriptado
+        inputText.value = ''; // Borra el campo de texto
     } else {
         hideResult(); // Si no hay texto, oculta el resultado
     }
@@ -55,6 +56,7 @@ decryptButton.addEventListener('click', () => {
     if (text.trim() !== '') {
         const decrypted = decrypt(text);
         showResult(decrypted);
+        inputText.value = ''; // Borra el campo de texto
     } else {
         hideResult();
     }

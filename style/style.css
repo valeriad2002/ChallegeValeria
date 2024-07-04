@@ -1,9 +1,21 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --background-color: #F3F5FC;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --white-color: #FFFFFF;
+    --text-color: #666;
+    --button-hover-color: #0056b3;
+    --border-color: #0A3871;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F3F5FC;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
 }
 
 .container {
@@ -11,23 +23,19 @@ html, body {
     flex-direction: column;
     min-height: 95vh;
     width: 95%;
-    
-    /* margin: 0px 0px 3px 20px; */
-    background-color: #F3F5FC;
+    background-color: var(--background-color);
     align-content: space-between;
     align-items: flex-start;
-    
 }
 
 header {
     padding: 20px;
-    background-color: #F3F5FC;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--box-shadow-color);
 }
 
 .logo {
     height: 40px; 
-    /* display: block; */
     width: 42px;
     margin-left: 21px;
 }
@@ -53,9 +61,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     margin-top: -25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--box-shadow-color);
     border-radius: 25px;
 }
 
@@ -74,23 +82,19 @@ header {
 #input-text {
     flex: 1;
     width: 100%;
-    /*border-radius: 5px;
-   border: 1px solid #D8DFE8;*/
-    resize: none;
-    background-color: #F3F5FC;
+    background-color: var(--background-color);
 }
 
 .info-text {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    color: #666;
+    color: var(--text-color);
     font-size: 14px;
 }
 
 .info-text img {
     height: 20px;
-    
 }
 
 .buttons {
@@ -109,16 +113,15 @@ header {
 }
 
 .encriptar {
-    background-color: #007bff;
-    color: #fff;
-    
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .desencriptar {
-    background-color: #6c757d;
-    color: #fff;
-    
+    background-color: var(--secondary-color);
+    color: var(--white-color);
 }
+
 #result-container {
     width: 100%;
     text-align: center;
@@ -127,9 +130,7 @@ header {
 }
 
 #encrypted-text {
-    background-color: white;
-    /*border: 1px solid #ccc;
-    border-radius: 5px;*/
+    background-color: var(--white-color);
     padding: 10px;
     margin-bottom: 10px;
     min-height: 100px;
@@ -139,9 +140,9 @@ header {
 }
 
 #copy-button {
-    background-color: #FFFFFF;
-    color: #0A3871;
-    border: 1px solid #0A3871;
+    background-color: var(--white-color);
+    color: var(--border-color);
+    border: 1px solid var(--border-color);
     padding: 10px 20px;
     border-radius: 16px;
     cursor: pointer;
@@ -149,11 +150,13 @@ header {
 }
 
 #copy-button:hover {
-    background-color: #0056b3;
+    background-color: var(--button-hover-color);
 }
-#icon{
-    padding-right:1%;
+
+#icon {
+    padding-right: 1%;
 }
+
 
 @media (max-width: 1200px) {
     .content {
