@@ -170,8 +170,13 @@ header {
         width: 98%;
         margin: 10px;
     }
-    
-
+    #result-container {
+        text-align: center;
+        margin-top: -173px;
+        height: 53px;
+        padding: 0px;
+        
+    }
     .buttons button {
         width: 100%;
         margin-bottom: 10px;
